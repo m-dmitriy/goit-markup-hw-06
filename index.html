@@ -442,38 +442,38 @@
                     <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
                     <label class="input-description">
                         Имя
-                        <div class="input-wrapper">
+                        <span class="input-wrapper">
                             <input class="input-area" type="text" name="user_name" required >
                             <svg class="input-area-image" width="18" height="18">
                                 <use href="./images/symbol-defs.svg#backdrop-icon-person-black"></use>
                             </svg>
-                        </div>
+                        </span>
                     </label>
                     <label class="input-description">
                         Телефон
-                        <div class="input-wrapper">
+                        <span class="input-wrapper">
                             <input class="input-area" type="tel" name="user_tel" required >
                             <svg class="input-area-image" width="18" height="18">
                                 <use href="./images/symbol-defs.svg#backdrop-icon-phone-black"></use>
                             </svg>
-                        </div>
+                        </span>
                     </label>
                     <label class="input-description">
                         Почта
-                        <div class="input-wrapper">
+                        <span class="input-wrapper">
                             <input class="input-area" type="text" name="user_email">
                             <svg class="input-area-image" width="18" height="18">
                                 <use href="./images/symbol-defs.svg#backdrop-icon-email-black"></use>
                             </svg>
-                        </div>
+                        </span>
                     </label>
                     <label class="input-description">
                         Комментарий
                         <textarea class="input-textarea" type="text" name="user_message" placeholder="Введите текст"></textarea>
                     </label>
                     <div class="checkbox-wrapper">
-                        <input class="checkbox-input" type="text" name="accept_policy" required >
-                        <label class="checkbox-label" for="">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                        <input class="checkbox-input visually-hidden" type="checkbox" id="policy-checkbox" name="accept_policy" required >
+                        <label class="checkbox-label" for="policy-checkbox">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="policy-link" href="">Условия договора</a></label>
                     </div>
                     <button class="modal-btn-submit" type="submit">Отправить</button>
                 </form>
